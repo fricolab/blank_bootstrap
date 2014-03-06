@@ -8,7 +8,6 @@
  *
  * @return void
  */
-
   // Register Theme Features
   // Loads Custom Header setup file (taken from twentytwelve theme).
 require( get_template_directory() . '/inc/custom-header.php' );
@@ -21,6 +20,8 @@ function wp_bootstrap_scripts_styles() {
   wp_enqueue_style('bootstrapwp', get_template_directory_uri() . '/css/bootstrap.min.css', array( ), '3.0.0', false );
   // Loads our main stylesheet.
   wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css', array( ));
+  // Loads holder.js.
+  wp_enqueue_script('holder', get_template_directory_uri() . '/js/holder.js', array ('jquery'), null, true );
 }
 
 add_action('wp_enqueue_scripts', 'wp_bootstrap_scripts_styles');
@@ -33,4 +34,5 @@ register_nav_menus( array(
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 ?>
+
 

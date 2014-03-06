@@ -33,7 +33,7 @@
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 	    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
          </hgroup>
-         <nav class="navbar navbar-default" role="navigation">
+         <nav class="navbar navbar-default" role="navigation" >
          <!-- Mobile display -->
             <div class="navbar-header">
 	       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -42,7 +42,7 @@
 		   <span class="icon-bar"></span>
 		   <span class="icon-bar"></span>
 	       </button>
-	       <a class="navbar-brand" href="#"><?php bloginfo( 'name' ); ?></a>
+	       <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 	    </div>
  
       <!-- Collect the nav links for toggling -->

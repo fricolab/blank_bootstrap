@@ -10,7 +10,12 @@
  * @since Blank Theme with Bootstrap 1.0
  */
   // Gets header.php
-  get_header();
+  get_header(); ?>
+
+
+<?php
+
+   
   // Gets Wordpress loop
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
